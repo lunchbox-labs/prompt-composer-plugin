@@ -32,7 +32,7 @@ export interface Host {
   readonly builtinSkillDirectory?: string;
 }
 
-/** Mirrors OpenCode 1.19.0 through 1.19.5. */
+/** Mirrors OpenCode 1.19.0 through 1.19.6. */
 export const opencode: Host = Object.freeze({
   name: "OpenCode",
   globalDirectory: "opencode",

@@ -41,13 +41,13 @@ test("published OpenCode package bundles the private core instead of depending o
 });
 
 test("release retains independently pinned SDK and plugin build dependencies", () => {
-  assert.equal(manifest.devDependencies["@opencode-ai/plugin"], "1.19.5");
-  assert.equal(manifest.devDependencies["@opencode-ai/sdk"], "1.19.5");
+  assert.equal(manifest.devDependencies["@opencode-ai/plugin"], "1.19.6");
+  assert.equal(manifest.devDependencies["@opencode-ai/sdk"], "1.19.6");
   // Core is typed against the same OpenCode API.
-  assert.equal(core.devDependencies["@opencode-ai/plugin"], "1.19.5");
-  assert.equal(core.devDependencies["@opencode-ai/sdk"], "1.19.5");
+  assert.equal(core.devDependencies["@opencode-ai/plugin"], "1.19.6");
+  assert.equal(core.devDependencies["@opencode-ai/sdk"], "1.19.6");
   for (const name of ["@opencode-ai/plugin", "@opencode-ai/sdk"]) {
-    assert.equal(lock.packages[`node_modules/${name}`].version, "1.19.5", name);
+    assert.equal(lock.packages[`node_modules/${name}`].version, "1.19.6", name);
   }
 });
 

@@ -1,6 +1,6 @@
 {
   "name": "@lunchbox-labs/kilo-prompt-composer",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Compose reusable prompt text in native Kilo CLI agents, commands and on-demand skills",
   "license": "MIT",
   "type": "module",
@@ -42,8 +42,8 @@
     "prepack": "npm run build"
   },
   "devDependencies": {
-    "@kilocode/plugin": "7.8.27",
-    "@kilocode/sdk": "7.8.27",
+    "@kilocode/plugin": "7.8.32",
+    "@kilocode/sdk": "7.8.32",
     "@opentui/core": "0.5.11",
     "@opentui/keymap": "0.5.11",
     "@opentui/solid": "0.5.11",
