@@ -1,7 +1,7 @@
 {
   "name": "@lunchbox-labs/prompt-composer-core",
   "private": true,
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Internal source shared by the OpenCode and Kilo CLI Prompt Composer packages",
   "license": "MIT",
   "type": "module",
