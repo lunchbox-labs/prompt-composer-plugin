@@ -41,10 +41,10 @@ test("published Kilo package bundles the private core instead of depending on it
 });
 
 test("release retains independently pinned Kilo SDK and plugin build dependencies", () => {
-  assert.equal(manifest.devDependencies["@kilocode/plugin"], "7.8.27");
-  assert.equal(manifest.devDependencies["@kilocode/sdk"], "7.8.27");
+  assert.equal(manifest.devDependencies["@kilocode/plugin"], "7.8.32");
+  assert.equal(manifest.devDependencies["@kilocode/sdk"], "7.8.32");
   for (const name of ["@kilocode/plugin", "@kilocode/sdk"]) {
-    assert.equal(lock.packages[`node_modules/${name}`].version, "7.8.27", name);
+    assert.equal(lock.packages[`node_modules/${name}`].version, "7.8.32", name);
   }
 });
 
